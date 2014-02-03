@@ -20,7 +20,7 @@ public class MySurfaceView extends GLSurfaceView {
 		super(context);
 		this.context = context; // Remove
 		
-		setEGLContextClientVersion(2);
+		setEGLContextClientVersion(2); // Move to manifest
 		setRenderer(renderer = new MyRenderer(this));
 	}
 	
